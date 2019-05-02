@@ -22,6 +22,12 @@ select {
     background: #ffffff;
     width: 111px;
 }
+footer h3{
+    color: #c2c2c2;
+    position: relative;
+    left: 104px;
+    bottom: 123px;
+}
 
 
 
