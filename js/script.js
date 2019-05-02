@@ -14,11 +14,13 @@ $.ajax({
     $.each(data.results, function(key, value){
         const text = value.abstract;
         const pic = value.multimedia[4].url;
-        $(".stories").append(`
-            <p>${text}</p>
-        `);
-        $(".stories").append(`
-        <img src= ${pic} >`);
+        const title = value.title;
+        const url = value.url;
+        $(".stories").append(`<div>
+            <p><a href=${url} target=_blank>${text}</a></p> <img src= ${pic} ><h1>${title}</h1>
+        </div>`);
+ 
+        
 
     })
 })   
