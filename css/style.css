@@ -1,5 +1,6 @@
 body {
     background:black;
+    color:#ffffff;
 }
 header img{
     width:320px;
@@ -37,6 +38,7 @@ footer h3{
     
  
 @media screen and (min-width:600px){
+    
 
 }
 @media screen and (min-width:1240px){
