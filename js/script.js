@@ -9,9 +9,19 @@ $.ajax({
     // url:'https://api.nytimes.com/svc/topstories/v2/'+section+'.json?api-key=GEF9XRHhNY0ZEEyDvzTckQt7YaVziB1d'
 })
 .done(function(data){
+    const filterImage= data.results.filter(function(event){
+         if (event.multimedia[4]!==undefined){
+             return true;
+
+         }else{
+             return false;
+
+         }
+    });
+    const sliceData = filterImage.slice(0,12);
     console.log(data);
     $(".stories").html("");
-    $.each(data.results, function(key, value){
+    $.each(sliceData, function(key, value){
         const text = value.abstract;
         const pic = value.multimedia[4].url;
         const title = value.title;
