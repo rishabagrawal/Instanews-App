@@ -23,11 +23,21 @@ select {
     background: #ffffff;
     width: 111px;
 }
+img{
+    max-width: 100%;
+}
+.article{
+    position: relative;
+}
+.content{
+    position: absolute;
+    bottom: 0;
+}
 footer h3{
     color: #c2c2c2;
     position: relative;
     left: 104px;
-    bottom: 123px;
+    bottom: 5px;
 }
 
 

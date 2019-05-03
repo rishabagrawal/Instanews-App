@@ -16,8 +16,8 @@ $.ajax({
         const pic = value.multimedia[4].url;
         const title = value.title;
         const url = value.url;
-        $(".stories").append(`<div>
-            <p><a href=${url} target=_blank>${text}</a></p> <img src= ${pic} ><h1>${title}</h1>
+        $(".stories").append(`<div class="article">
+            <p class="content"><a href=${url} target=_blank>${text}</a></p> <img src= ${pic} >
         </div>`);
  
         
