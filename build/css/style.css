@@ -371,7 +371,7 @@ select {
   background: #ffffff;
   width: 111px; }
 
-img {
+.article img {
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -405,7 +405,7 @@ a {
 footer h3 {
   color: #c2c2c2;
   position: relative;
-  left: 104px;
+  text-align: center;
   bottom: 5px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300; }
