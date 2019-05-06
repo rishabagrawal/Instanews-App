@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+  }
 body {
     background:black;
     color:#ffffff;
@@ -25,13 +28,31 @@ select {
 }
 img{
     max-width: 100%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+
+}
+.stories {
+    display: flex;
+    flex-wrap: wrap;
 }
 .article{
     position: relative;
+    width: 50%;
+    height: 89vw;
 }
 .content{
     position: absolute;
     bottom: 0;
+    background: rgba(0,0,0,0.6);
+    padding: 1rem;
+    width:100%;
+    margin:0;
 }
 footer h3{
     color: #c2c2c2;
@@ -53,8 +74,12 @@ footer h3{
     
 
 }
-@media screen and (min-width:1240px){
+@media screen and (min-width:1000px){
 
+    .article{
+        width: 25%;
+        height: 40vw;
+    }
 }
 
 
