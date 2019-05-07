@@ -4,6 +4,9 @@
 body {
     background:black;
     color:#ffffff;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 header img{
     width:320px;
@@ -17,6 +20,19 @@ header{
     flex-direction: column;
     height: 100vh;
     align-items: center;
+}
+.site-header{
+    flex-grow: 1;
+}
+.shrink{
+    flex-grow: 0;
+    height: 25%;
+    img {
+        width: 100px;
+    }
+}
+.grow{
+    flex-grow: 1;
 }
 header p{
     color: #ffffff;

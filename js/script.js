@@ -1,5 +1,7 @@
 
 $('#selection-bar').on('change', function(){
+    $('.site-header').addClass('shrink');
+  $('.stories').addClass('grow');
     const section = $(this).val();
     if (section !== '')
  
@@ -30,7 +32,6 @@ $.ajax({
             <p class="content"><a href=${url} target=_blank>${text}</a></p> <img src= ${pic} >
         </div>`);
  
-        
 
     })
 })   
