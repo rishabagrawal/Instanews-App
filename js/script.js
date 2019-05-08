@@ -5,7 +5,7 @@ $("#selection-bar").on("change", function() {
   const section = $(this).val();
   if (section !== "") {
 
-    $(".stories").append('<img class="loading-gif" src="./../../images/ajax-loader.gif"/>');
+    $(".stories").append('<img class="loading-gif" src="./images/ajax-loader.gif"/>');
     // append a loading image
     
 
