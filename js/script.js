@@ -4,8 +4,8 @@ $("#selection-bar").on("change", function() {
   $(".stories").addClass("grow");
   const section = $(this).val();
   if (section !== "") {
-
-    $(".stories").append('<img class="loading-gif" src="images/ajax-loader.gif"/>');
+    $(".stories").html("");
+    $(".stories").append('<div class="loading" ><img class="loading-gif" src="images/ajax-loader.gif"/></div>');
     // append a loading image
     
 
