@@ -349,7 +349,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 100vh; }
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif; }
 
 header {
   display: -webkit-box;
