@@ -33,10 +33,9 @@ $("#selection-bar").on("change", function() {
       $.each(sliceData, function(key, value) {
         const text = value.abstract;
         const pic = value.multimedia[4].url;
-        const title = value.title;
         const url = value.url;
         $(".stories").append(`<div class="article">
-            <p class="content"><a href=${url} target=_blank>${text}</a></p> <img src= ${pic} >
+            <p class="content"><a href=${url} target="_blank">${text}</a></p> <img class="background-hover" src="${pic}" />
         </div>`);
       });
     });
