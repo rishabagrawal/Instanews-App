@@ -1,114 +1,111 @@
 * {
     box-sizing: border-box;
   }
-body {
-    background:black;
-    color:#ffffff;
-    display:flex;
+  
+  body {
+    background: black;
+    color: #ffffff;
+    display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-header img{
-    width:320px;
-
-
-}
-header{
+  }
+  
+  header {
+    img {
+      width: 320px;
+    }
     display: flex;
     justify-content: center;
     text-align: center;
     flex-direction: column;
     height: 100vh;
     align-items: center;
-}
-.loading-gif{
+  }
+  
+  .loading-gif {
     position: absolute;
     width: 50px;
     height: 50px;
-}
-.site-header{
+  }
+  
+  .site-header {
     flex-grow: 1;
-}
-.shrink{
+  }
+  
+  .shrink {
     flex-grow: 0;
     height: 25%;
     img {
-        width: 100px;
+      width: 100px;
     }
-}
-.grow{
+  }
+  
+  .grow {
     flex-grow: 1;
-}
-header p{
+  }
+  
+  header p {
     color: #ffffff;
-}
-select {
+  }
+  
+  select {
     color: black;
     background: #ffffff;
     width: 111px;
     margin-bottom: 22px;
-}
-.article img{
+  }
+  
+  .article img {
     max-width: 100%;
     object-fit: cover;
     width: 100%;
     height: 100%;
-}
-a {
+  }
+  
+  a {
     color: #fff;
     text-decoration: none;
-
-}
-.stories {
+  }
+  
+  .stories {
     display: flex;
     flex-wrap: wrap;
-}
-.article{
+  }
+  
+  .article {
     position: relative;
     width: 50%;
     height: 89vw;
-}
-.content{
+  }
+  
+  .content {
     position: absolute;
     bottom: 0;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     padding: 1rem;
-    width:100%;
-    margin:0;
-}
-footer h3{
+    width: 100%;
+    margin: 0;
+  }
+  
+  footer h3 {
     color: #c2c2c2;
     position: relative;
     text-align: center;
     bottom: 5px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-}
-
-
-
-
-
-
-    
- 
-@media screen and (min-width:600px){
-    .site-header{
-        display: flex;
-        flex-direction: row;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .site-header {
+      display: flex;
+      flex-direction: row;
     }
-    
-
-}
-@media screen and (min-width:1000px){
-
-    .article{
-        width: 25%;
-        height: 40vw;
+  }
+  
+  @media screen and (min-width: 1000px) {
+    .article {
+      width: 25%;
+      height: 40vw;
     }
-}
-
-
-
-
-
+  }
