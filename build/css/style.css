@@ -400,7 +400,8 @@ header p {
 select {
   color: black;
   background: #ffffff;
-  width: 111px; }
+  width: 111px;
+  margin-bottom: 22px; }
 
 .article img {
   max-width: 100%;
@@ -440,6 +441,16 @@ footer h3 {
   bottom: 5px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300; }
+
+@media screen and (min-width: 600px) {
+  .site-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; } }
 
 @media screen and (min-width: 1000px) {
   .article {

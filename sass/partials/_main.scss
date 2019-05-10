@@ -46,6 +46,7 @@ select {
     color: black;
     background: #ffffff;
     width: 111px;
+    margin-bottom: 22px;
 }
 .article img{
     max-width: 100%;
@@ -92,6 +93,10 @@ footer h3{
     
  
 @media screen and (min-width:600px){
+    .site-header{
+        display: flex;
+        flex-direction: row;
+    }
     
 
 }
