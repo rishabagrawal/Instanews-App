@@ -6,19 +6,15 @@ $("#selection-bar").on("change", function() {
   if (section !== "") {
     $(".stories").html("");
     $(".stories").append('<div class="loading" ><img class="loading-gif" src="images/ajax-loader.gif"/></div>');
-    // append a loading image
     
-
-    /**
-     * Ajax request
-     */
+    
     $.ajax({
       method: "get",
       url:
         "https://api.nytimes.com/svc/topstories/v2/" +
         section +
         ".json?api-key=GEF9XRHhNY0ZEEyDvzTckQt7YaVziB1d"
-      // url:'https://api.nytimes.com/svc/topstories/v2/'+section+'.json?api-key=GEF9XRHhNY0ZEEyDvzTckQt7YaVziB1d'
+      
     }).done(function(data) {
       const filterImage = data.results.filter(function(event) {
         if (event.multimedia[4] !== undefined) {

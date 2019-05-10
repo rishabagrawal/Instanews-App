@@ -1,4 +1,4 @@
-//add media queries 
+
 $tablet-width: 600px;
 @mixin tablet {
     @media(min-width: $tablet-width) {
