@@ -4,7 +4,7 @@
 
 body {
   background: black;
-  color: #ffffff;
+  color: $text-white;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -71,7 +71,7 @@ header {
 }
 
 header p {
-  color: #ffffff;
+  color: $text-white;
 }
 
 select {
@@ -107,7 +107,7 @@ select {
 }
 
 a {
-  color: #fff;
+  color: $text-white;
   text-decoration: none;
 }
 
@@ -142,4 +142,8 @@ footer h3 {
   bottom: 5px;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
+  @include desktop {
+    text-align: left;
+    padding: 10px;
+  }
 }

@@ -450,7 +450,7 @@ select {
   opacity: 0.5; }
 
 a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none; }
 
 .stories {
@@ -484,3 +484,7 @@ footer h3 {
   bottom: 5px;
   font-family: "Open Sans", sans-serif;
   font-weight: 300; }
+  @media (min-width: 1000px) {
+    footer h3 {
+      text-align: left;
+      padding: 10px; } }
