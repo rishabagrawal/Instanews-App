@@ -30,6 +30,10 @@
   
   .site-header {
     flex-grow: 1;
+    @include tablet{
+        display: flex;
+        flex-direction: row;
+    }
   }
   
   .shrink {
@@ -60,6 +64,7 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
+   
   }
   
   a {
@@ -76,6 +81,10 @@
     position: relative;
     width: 50%;
     height: 89vw;
+    @include desktop{
+        width: 25%;
+      height: 40vw;
+    }
   }
   
   .content {
@@ -96,16 +105,3 @@
     font-weight: 300;
   }
   
-  @media screen and (min-width: 600px) {
-    .site-header {
-      display: flex;
-      flex-direction: row;
-    }
-  }
-  
-  @media screen and (min-width: 1000px) {
-    .article {
-      width: 25%;
-      height: 40vw;
-    }
-  }
