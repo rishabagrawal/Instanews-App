@@ -2,6 +2,11 @@
 
 An interactive website that lets vistors filter top stories via New York Times API. Its a mobile first repsonsive design, 600px tablet, and 1000px desktop. 
 
+<img src= "images/screenshot-mobile.jpg" width="100" height ="20">
+<img src= "images/screenshot -tablet.jpg" width="100" height ="20">
+<img src= "images/screenshot-desktop.jpg .png" width="100" height ="20">
+
+
 ## Tools and Techs Used 
 * Sass 
 * Git
