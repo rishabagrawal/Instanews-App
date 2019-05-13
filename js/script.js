@@ -1,3 +1,4 @@
+$(function() {
 $("#selection-bar").on("change", function() {
     
   $(".site-header").addClass("shrink");
@@ -36,4 +37,5 @@ $("#selection-bar").on("change", function() {
       });
     });
   } // end of if
+});
 });
